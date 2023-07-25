@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 0;
+    background: #000000;
+    display: grid;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    animation-delay: 10 s;
+}
+
+.hero_1 {
+    position: absolute;
+    animation-name: Hero_1;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    width: 80px;
+    height: 750px;
+    left: 9.5%;
+    top: 3%;
+    z-index: 1;
+}
+
+@keyframes Hero_1 {
+    0% {
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        bottom: 0%;
+        animation-delay: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    50% {
+        width: 80px;
+        height: 750px;
+        left: 40%;
+        top: 3%;
+        animation-timing-function: ease-in-out;
+        transform: skewY(20deg);
+    }
+    
+    100% {
+        width: 80px;
+        height: 750px;
+        left: 10%;
+        top: 3%;
+        animation-iteration-count: 1;
+        border-radius: 10%;
+    }
+}
+
+.hero_2 {
+    position: absolute;
+    animation-name: Hero_2;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    width: 80px;
+    height: 800px;
+    left: 24%;
+    top: 3%;
+    z-index: 2;
+}
+
+@keyframes Hero_2 {
+    0% {
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        bottom: 0%;
+        animation-delay: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    50% {
+        width: 80px;
+        height: 800px;
+        left: 40%;
+        top: 3%;
+        animation-timing-function: ease-in-out;
+        transform: skewY(10deg);
+    }
+    
+    100% {
+        width: 80px;
+        height: 800px;
+        left: 24%;
+        top: 3%;
+        animation-iteration-count: 1;
+    }
+}
+
+.hero_3 {
+    position: absolute;
+    animation-name: Hero_3;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    width: 80px;
+    height: 800px;
+    left: 38%;
+    top: 3%; 
+    z-index: 5;
+}
+
+@keyframes Hero_3 {
+    0% {
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        bottom: 0%;
+        animation-delay: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+        z-index:5;
+        
+    }
+    
+    50% {
+        width: 80px;
+        height: 800px;
+        left: 40%;
+        top: 3%;
+        animation-timing-function: ease-in-out;
+        transform: skewY(1deg);
+    }
+    
+    100% {
+        width: 80px;
+        height: 800px;
+        left: 38.1%;
+        top: 3%;
+        animation-iteration-count: 1;
+    }
+}
+
+.hero_4 {
+    position: absolute;
+    animation-name: Hero_4;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    width: 80px;
+    height: 800px;
+    left: 52.2%;
+    top: 3%;
+    z-index: 2;
+}
+
+@keyframes Hero_4 {
+    0% {
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        bottom: 0%;
+        animation-delay: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    50% {
+        width: 80px;
+        height: 800px;
+        left: 40%;
+        top: 3%;
+        animation-timing-function: ease-in-out;
+        transform: skewY(10deg);
+    }
+    
+    100% {
+        width: 80px;
+        height: 800px;
+        left: 52.2%;
+        top: 3%;
+        animation-iteration-count: 1;
+    }
+}
+
+
+.hero_5 {
+    position: absolute;
+    animation-name: Hero_5;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    width: 80px;
+    height: 800px;
+    left: 66.4%;
+    top: 3%;
+    z-index: 1;
+}
+
+@keyframes Hero_5 {
+    0% {
+        width: 0px;
+        height: 0px;
+        left: 40%;
+        bottom: 0%;
+        animation-delay: 10s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    50% {
+        width: 80px;
+        height: 800px;
+        left: 40%;
+        top: 3%;
+        animation-timing-function: ease-in-out;
+        transform: skewY(10deg);
+    }
+    
+    100% {
+        width: 80px;
+        height: 800px;
+        left: 66.4%;
+        top: 3%;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+    }
+}
+
+
+
+
+body {
+    margin: 0;
+    background: #000000;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    z-index: 10;
+}
+
+a {
+    position: relative;
+    padding: 30px 60px;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.4);
+    color: #999;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font: 700 30px consolas;
+    bottom: 103%;
+    right: 4.5%;
+    overflow: hidden;
+}
+
+a span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #171618, #3bff3b);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+a span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, #171618, #3bff3b);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+
+a span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, #171618, #3bff3b);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+a span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to top, #171618, #3bff3b);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
